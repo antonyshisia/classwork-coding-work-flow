@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice</title>
+    <style>
+        .box {
+            width: 200px;
+            background: #ffe8a3;
+        }
+        .content-only {
+            padding: 0;
+        }
+        .with-padding {
+            padding: 24px;
+        }
+        .with-border {
+            padding: 24px;
+            border: 4px solid;
+        }
+        .with-margin {
+            padding: 24px;
+            border: 4px solid;
+            margin: 32px;
+        }
+        .broken-box {
+            width: 300px;
+            padding: 20px;
+            border: none1px solid black;
+            background: #ffe8a3;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid grey;
+            background: #ffe8a3;
+        }
+        .image {
+            width: 300px;
+            height: 200px;
+            background: #ffe8a3;
+        }
+        .card-with-image {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+<h1>Box Model Practice</h1>
 
+<h2>Exercise 1 - The Four Layers</h2>
+<div class="box content-only">Content Only</div>
+<div class="box with-padding">With Padding</div>
+<div class="box with-border">With Border</div>
+<div class="box with-margin">With Margin</div>
+
+<h2>Exercise 2 - Broken Box</h2>
+<div class="broken-box">I should be 300px wide. I am not.</div>
+
+<h2>Exercise 3 - the Card</h2>
+<article class="card">
+    <img src="https://placehold.co/258*150" alt="Grey placeholder for a project screenshot">
+    <h3>Mashinani Agribusiness Hub</h3>
+    <p>The platform provides a comprehensive solution for managing agricultural activities and facilitating a one stop solutions for trade of agricultural products, providing the farmers with a pool of ready market while also providing a resource pull for leasing agricultural equipment. The platform also offers resource education for agribusinnes and agriculture.</p>
+    <button type="button">View project</button>
+</article>
+</body>
+</html>
